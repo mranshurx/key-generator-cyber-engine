@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engine Key Manager - mranshurx/new-engine</title>
+    <title>CYBER-ENGINE Key Generator - Developed by ANXHU</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -12,9 +12,11 @@
             theme: {
                 extend: {
                     colors: {
-                        darkBg: '#0b0f19',
-                        darkCard: '#111827',
-                        darkBorder: '#1f2937',
+                        cyberBg: '#030712',
+                        cyberCard: '#0f172a',
+                        cyberBorder: '#1e293b',
+                        cyberCyan: '#06b6d4',
+                        cyberNeon: '#10b981',
                     }
                 }
             }
@@ -23,31 +25,38 @@
     <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Inter Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        .cyber-glow {
+            box-shadow: 0 0 20px rgba(6, 182, 212, 0.15);
+        }
+        .cyber-border {
+            border: 1px solid rgba(6, 182, 212, 0.2);
+        }
     </style>
 </head>
-<body class="bg-darkBg text-gray-100 min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
+<body class="bg-cyberBg text-gray-100 min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-black">
 
-    <header class="border-b border-darkBorder bg-darkCard/50 backdrop-blur-md sticky top-0 z-10">
+    <header class="border-b border-cyberBorder bg-cyberCard/80 backdrop-blur-md sticky top-0 z-10">
         <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
             <div class="flex items-center space-x-3">
-                <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center shadow-lg shadow-indigo-500/20">
-                    <i class="fa-solid fa-key text-white text-sm"></i>
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-600 to-emerald-500 flex items-center justify-center shadow-lg shadow-cyan-500/20">
+                    <i class="fa-solid fa-terminal text-black font-bold text-base"></i>
                 </div>
                 <div>
-                    <h1 class="text-sm font-semibold tracking-wide text-white">Engine Key Manager</h1>
-                    <p id="headerSubtitle" class="text-xs text-gray-400">mranshurx / new-engine</p>
+                    <h1 class="text-sm font-extrabold tracking-wider text-cyan-400 uppercase">CYBER-ENGINE Key Generator</h1>
+                    <p id="headerSubtitle" class="text-xs text-gray-400">Developed by <span class="text-emerald-400 font-semibold">ANXHU</span> &bull; mranshurx / new-engine</p>
                 </div>
             </div>
             <div class="flex items-center space-x-3">
-                <button onclick="openSettingsModal()" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-darkBorder hover:bg-gray-800 text-gray-300 transition-colors cursor-pointer border border-darkBorder">
-                    <i class="fa-solid fa-gear text-indigo-400"></i>
-                    <span>Config / Fix 404</span>
+                <button onclick="openSettingsModal()" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-cyberBorder hover:bg-gray-800 text-gray-300 transition-colors cursor-pointer border border-cyan-500/30">
+                    <i class="fa-solid fa-sliders text-cyan-400"></i>
+                    <span>Config Settings</span>
                 </button>
                 <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-                    <span class="w-1.5 h-1.5 mr-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Active
+                    <span class="w-1.5 h-1.5 mr-1.5 rounded-full bg-emerald-400 animate-ping"></span> Live Link
                 </span>
             </div>
         </div>
@@ -57,43 +66,47 @@
         <div class="space-y-6">
             
             <!-- Welcome / Status Banner -->
-            <div class="bg-gradient-to-r from-indigo-950/40 via-darkCard to-darkCard border border-indigo-500/20 rounded-2xl p-6 shadow-xl relative overflow-hidden">
-                <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="bg-gradient-to-r from-cyan-950/40 via-cyberCard to-cyberCard cyber-border rounded-2xl p-6 cyber-glow relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
                 <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
                     <div>
-                        <h2 class="text-xl font-bold text-white tracking-tight">Repository Key Control</h2>
-                        <p class="text-sm text-gray-400 mt-1">Directly view and update your remote engine license key stored at <code class="text-indigo-400 font-mono text-xs bg-indigo-950/80 px-1.5 py-0.5 rounded border border-indigo-900">key.txt</code>.</p>
+                        <div class="inline-flex items-center space-x-2 px-2.5 py-0.5 rounded-md bg-cyan-500/10 text-cyan-300 text-xs font-mono mb-2 border border-cyan-500/20">
+                            <i class="fa-solid fa-code-branch"></i>
+                            <span>key.txt controller</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-white tracking-tight">Cyber-Engine Remote Key Matrix</h2>
+                        <p class="text-sm text-gray-400 mt-1">Direct interface to pull and rewrite repository authentication keys hosted at <code class="text-cyan-400 font-mono text-xs bg-cyan-950/80 px-1.5 py-0.5 rounded border border-cyan-900">key.txt</code>.</p>
                     </div>
-                    <button onclick="openModal()" class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-500 active:scale-95 transition-all shadow-lg shadow-indigo-600/30 cursor-pointer">
-                        <i class="fa-solid fa-pen-to-square mr-2"></i> Change Key
+                    <button onclick="openModal()" class="inline-flex items-center justify-center px-5 py-3 rounded-xl text-sm font-semibold text-black bg-gradient-to-r from-cyan-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 active:scale-95 transition-all shadow-lg shadow-cyan-500/25 cursor-pointer">
+                        <i class="fa-solid fa-wand-magic-sparkles mr-2"></i> Change Key
                     </button>
                 </div>
             </div>
 
             <!-- Current Key Display Card -->
-            <div class="bg-darkCard border border-darkBorder rounded-2xl p-6 shadow-md">
+            <div class="bg-cyberCard cyber-border rounded-2xl p-6 shadow-md">
                 <div class="flex items-center justify-between mb-4">
                     <div class="flex items-center space-x-2">
-                        <i class="fa-solid fa-file-code text-indigo-400"></i>
-                        <h3 class="text-sm font-semibold text-gray-200">Current Key Value (<span id="branchName">main</span>)</h3>
+                        <i class="fa-solid fa-shield-halved text-cyan-400"></i>
+                        <h3 class="text-sm font-semibold text-gray-200">Active Key Payload (<span id="branchName" class="text-cyan-400">main</span>)</h3>
                     </div>
                     <button onclick="fetchCurrentKey()" class="text-xs text-gray-400 hover:text-white transition-colors flex items-center space-x-1 cursor-pointer" title="Refresh Key">
                         <i id="refreshIcon" class="fa-solid fa-rotate"></i>
-                        <span>Refresh</span>
+                        <span>Refresh Key</span>
                     </button>
                 </div>
 
                 <div class="relative group">
                     <div id="loadingState" class="py-12 flex flex-col items-center justify-center text-gray-500 space-y-2">
-                        <i class="fa-solid fa-circle-notch fa-spin text-indigo-500 text-xl"></i>
-                        <p class="text-xs">Fetching key from GitHub API...</p>
+                        <i class="fa-solid fa-circle-notch fa-spin text-cyan-400 text-xl"></i>
+                        <p class="text-xs font-mono text-cyan-300">Establishing secure connection to GitHub API...</p>
                     </div>
                     <div id="keyValueContainer" class="hidden">
-                        <pre id="keyValueDisplay" class="bg-darkBg border border-darkBorder rounded-xl p-4 font-mono text-sm text-indigo-300 overflow-x-auto whitespace-pre-wrap break-all selection:bg-indigo-500 selection:text-white"></pre>
+                        <pre id="keyValueDisplay" class="bg-cyberBg cyber-border rounded-xl p-4 font-mono text-sm text-emerald-300 overflow-x-auto whitespace-pre-wrap break-all selection:bg-cyan-500 selection:text-black"></pre>
                         <div class="mt-3 flex items-center justify-between">
                             <span id="fileShaDisplay" class="text-xs font-mono text-gray-500">SHA: loading...</span>
-                            <button onclick="copyKey()" class="text-xs font-medium text-gray-400 hover:text-white flex items-center space-x-1 bg-darkBorder/50 hover:bg-darkBorder px-3 py-1.5 rounded-lg transition-colors cursor-pointer">
-                                <i class="fa-regular fa-copy"></i>
+                            <button onclick="copyKey()" class="text-xs font-medium text-gray-300 hover:text-white flex items-center space-x-1 bg-cyberBorder hover:bg-gray-800 px-3 py-1.5 rounded-lg transition-colors cursor-pointer border border-cyan-500/20">
+                                <i class="fa-regular fa-copy text-cyan-400"></i>
                                 <span id="copyText">Copy Key</span>
                             </button>
                         </div>
@@ -114,36 +127,36 @@
     </main>
 
     <!-- Modal for Changing Key -->
-    <div id="keyModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-200">
-        <div id="modalContent" class="bg-darkCard border border-darkBorder rounded-2xl max-w-lg w-full p-6 shadow-2xl transform scale-95 transition-transform duration-200">
+    <div id="keyModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-200">
+        <div id="modalContent" class="bg-cyberCard cyber-border rounded-2xl max-w-lg w-full p-6 shadow-2xl transform scale-95 transition-transform duration-200">
             <div class="flex items-center justify-between mb-4">
                 <div class="flex items-center space-x-2">
-                    <div class="w-8 h-8 rounded-lg bg-indigo-600/20 text-indigo-400 flex items-center justify-center">
+                    <div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center">
                         <i class="fa-solid fa-key text-sm"></i>
                     </div>
-                    <h3 class="text-base font-bold text-white">Update Key File</h3>
+                    <h3 class="text-base font-bold text-white">Modify Remote Key</h3>
                 </div>
-                <button onclick="closeModal()" class="text-gray-400 hover:text-white p-1.5 rounded-lg hover:bg-darkBorder transition-colors cursor-pointer">
+                <button onclick="closeModal()" class="text-gray-400 hover:text-white p-1.5 rounded-lg hover:bg-cyberBorder transition-colors cursor-pointer">
                     <i class="fa-solid fa-xmark text-lg"></i>
                 </button>
             </div>
 
             <p class="text-xs text-gray-400 mb-4">
-                Enter your brand new key value below. When you click update, this will trigger a direct commit to your repository.
+                Enter your new key string below. Submitting will execute a secure <code class="text-cyan-400 font-mono">PUT</code> request directly to ANXHU's repository.
             </p>
 
             <div class="space-y-4">
                 <div>
-                    <label class="block text-xs font-medium text-gray-300 mb-1.5">New Key Content</label>
-                    <textarea id="newKeyInput" rows="4" placeholder="Enter new key value here..." class="w-full bg-darkBg border border-darkBorder rounded-xl p-3 text-sm font-mono text-gray-200 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all resize-none"></textarea>
+                    <label class="block text-xs font-medium text-cyan-300 mb-1.5 font-mono">New Key Content</label>
+                    <textarea id="newKeyInput" rows="4" placeholder="Enter key payload..." class="w-full bg-cyberBg cyber-border rounded-xl p-3 text-sm font-mono text-emerald-300 focus:outline-none focus:border-cyan-400 transition-all resize-none"></textarea>
                 </div>
 
                 <div class="flex items-center justify-end space-x-3 pt-2">
-                    <button onclick="closeModal()" type="button" class="px-4 py-2 rounded-xl text-sm font-medium text-gray-300 hover:bg-darkBorder transition-colors cursor-pointer">
+                    <button onclick="closeModal()" type="button" class="px-4 py-2 rounded-xl text-sm font-medium text-gray-300 hover:bg-cyberBorder transition-colors cursor-pointer">
                         Cancel
                     </button>
-                    <button id="updateButton" onclick="updateKey()" class="inline-flex items-center px-5 py-2 rounded-xl text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-500 active:scale-95 transition-all shadow-lg shadow-indigo-600/30 cursor-pointer">
-                        <span id="updateButtonText">Update Key</span>
+                    <button id="updateButton" onclick="updateKey()" class="inline-flex items-center px-5 py-2.5 rounded-xl text-sm font-semibold text-black bg-cyan-400 hover:bg-cyan-300 active:scale-95 transition-all shadow-lg shadow-cyan-500/30 cursor-pointer">
+                        <span id="updateButtonText">Commit Update</span>
                         <i id="updateSpinner" class="fa-solid fa-circle-notch fa-spin ml-2 hidden"></i>
                     </button>
                 </div>
@@ -151,52 +164,48 @@
         </div>
     </div>
 
-    <!-- Modal for Settings & Fixing 404 -->
-    <div id="settingsModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-200">
-        <div id="settingsModalContent" class="bg-darkCard border border-darkBorder rounded-2xl max-w-lg w-full p-6 shadow-2xl transform scale-95 transition-transform duration-200">
+    <!-- Modal for Settings -->
+    <div id="settingsModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-200">
+        <div id="settingsModalContent" class="bg-cyberCard cyber-border rounded-2xl max-w-lg w-full p-6 shadow-2xl transform scale-95 transition-transform duration-200">
             <div class="flex items-center justify-between mb-4">
                 <div class="flex items-center space-x-2">
-                    <div class="w-8 h-8 rounded-lg bg-indigo-600/20 text-indigo-400 flex items-center justify-center">
-                        <i class="fa-solid fa-gear text-sm"></i>
+                    <div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center">
+                        <i class="fa-solid fa-sliders text-sm"></i>
                     </div>
-                    <h3 class="text-base font-bold text-white">Repository Settings & Fix 404</h3>
+                    <h3 class="text-base font-bold text-white">Repository Config Panel</h3>
                 </div>
-                <button onclick="closeSettingsModal()" class="text-gray-400 hover:text-white p-1.5 rounded-lg hover:bg-darkBorder transition-colors cursor-pointer">
+                <button onclick="closeSettingsModal()" class="text-gray-400 hover:text-white p-1.5 rounded-lg hover:bg-cyberBorder transition-colors cursor-pointer">
                     <i class="fa-solid fa-xmark text-lg"></i>
                 </button>
             </div>
 
-            <p class="text-xs text-gray-400 mb-4">
-                If you get a 404 error, make sure your repository name is exact, your token has permissions, and <code class="text-indigo-400 font-mono">key.txt</code> actually exists in the root folder of that repository.
-            </p>
-
             <div class="space-y-3">
                 <div>
                     <label class="block text-xs font-medium text-gray-300 mb-1">GitHub Username / Owner</label>
-                    <input type="text" id="configOwner" class="w-full bg-darkBg border border-darkBorder rounded-xl p-2.5 text-sm font-mono text-gray-200 focus:outline-none focus:border-indigo-500" />
+                    <input type="text" id="configOwner" class="w-full bg-cyberBg cyber-border rounded-xl p-2.5 text-sm font-mono text-gray-200 focus:outline-none focus:border-cyan-400" />
                 </div>
                 <div>
                     <label class="block text-xs font-medium text-gray-300 mb-1">Repository Name</label>
-                    <input type="text" id="configRepo" class="w-full bg-darkBg border border-darkBorder rounded-xl p-2.5 text-sm font-mono text-gray-200 focus:outline-none focus:border-indigo-500" />
+                    <input type="text" id="configRepo" class="w-full bg-cyberBg cyber-border rounded-xl p-2.5 text-sm font-mono text-gray-200 focus:outline-none focus:border-cyan-400" />
                 </div>
                 <div>
                     <label class="block text-xs font-medium text-gray-300 mb-1">File Path</label>
-                    <input type="text" id="configPath" class="w-full bg-darkBg border border-darkBorder rounded-xl p-2.5 text-sm font-mono text-gray-200 focus:outline-none focus:border-indigo-500" />
+                    <input type="text" id="configPath" class="w-full bg-cyberBg cyber-border rounded-xl p-2.5 text-sm font-mono text-gray-200 focus:outline-none focus:border-cyan-400" />
                 </div>
                 <div>
                     <label class="block text-xs font-medium text-gray-300 mb-1">Branch Name</label>
-                    <input type="text" id="configBranch" class="w-full bg-darkBg border border-darkBorder rounded-xl p-2.5 text-sm font-mono text-gray-200 focus:outline-none focus:border-indigo-500" />
+                    <input type="text" id="configBranch" class="w-full bg-cyberBg cyber-border rounded-xl p-2.5 text-sm font-mono text-gray-200 focus:outline-none focus:border-cyan-400" />
                 </div>
                 <div>
                     <label class="block text-xs font-medium text-gray-300 mb-1">GitHub Personal Access Token (PAT)</label>
-                    <input type="password" id="configToken" class="w-full bg-darkBg border border-darkBorder rounded-xl p-2.5 text-sm font-mono text-gray-200 focus:outline-none focus:border-indigo-500" />
+                    <input type="password" id="configToken" class="w-full bg-cyberBg cyber-border rounded-xl p-2.5 text-sm font-mono text-gray-200 focus:outline-none focus:border-cyan-400" />
                 </div>
 
                 <div class="flex items-center justify-end space-x-3 pt-3">
-                    <button onclick="closeSettingsModal()" type="button" class="px-4 py-2 rounded-xl text-sm font-medium text-gray-300 hover:bg-darkBorder transition-colors cursor-pointer">
+                    <button onclick="closeSettingsModal()" type="button" class="px-4 py-2 rounded-xl text-sm font-medium text-gray-300 hover:bg-cyberBorder transition-colors cursor-pointer">
                         Cancel
                     </button>
-                    <button onclick="saveSettings()" class="inline-flex items-center px-5 py-2 rounded-xl text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-500 active:scale-95 transition-all shadow-lg shadow-indigo-600/30 cursor-pointer">
+                    <button onclick="saveSettings()" class="inline-flex items-center px-5 py-2 rounded-xl text-sm font-semibold text-black bg-cyan-400 hover:bg-cyan-300 active:scale-95 transition-all shadow-lg shadow-cyan-500/30 cursor-pointer">
                         Save & Reload
                     </button>
                 </div>
@@ -204,8 +213,8 @@
         </div>
     </div>
 
-    <footer class="border-t border-darkBorder bg-darkCard/30 py-4 text-center text-xs text-gray-500">
-        <p>GitHub Key Changer Tool &bull; Secure API Integration</p>
+    <footer class="border-t border-cyberBorder bg-cyberCard/30 py-4 text-center text-xs text-gray-500">
+        <p>CYBER-ENGINE Key Generator &bull; Developed by <span class="text-cyan-400 font-semibold">ANXHU</span></p>
     </footer>
 
     <script>
@@ -224,7 +233,7 @@
 
         // Initialize application on load
         window.onload = function() {
-            document.getElementById('headerSubtitle').textContent = `${REPO_OWNER} / ${REPO_NAME}`;
+            document.getElementById('headerSubtitle').innerHTML = `Developed by <span class="text-emerald-400 font-semibold">ANXHU</span> &bull; ${REPO_OWNER} / ${REPO_NAME}`;
             document.getElementById('branchName').textContent = BRANCH;
             fetchCurrentKey();
         };
@@ -258,9 +267,9 @@
                     } catch (e) {}
 
                     if (response.status === 401) {
-                        throw new Error(`401 Unauthorized: Token is invalid or expired. Check your token in Config.`);
+                        throw new Error(`401 Unauthorized: Token is invalid or expired. Check your token in Config Settings.`);
                     } else if (response.status === 404) {
-                        throw new Error(`404 Not Found: Could not find '${FILE_PATH}' in repository '${REPO_OWNER}/${REPO_NAME}' on branch '${BRANCH}'. Click 'Config / Fix 404' above to verify your repo name and ensure key.txt exists!`);
+                        throw new Error(`404 Not Found: Could not find '${FILE_PATH}' in repository '${REPO_OWNER}/${REPO_NAME}' on branch '${BRANCH}'. Click 'Config Settings' above to verify your repo name and ensure key.txt exists!`);
                     }
                     throw new Error(`GitHub API Error (${response.status}): ${errorDetail}`);
                 }
@@ -283,10 +292,10 @@
                 console.error(error);
                 loadingState.innerHTML = `
                     <i class="fa-solid fa-triangle-exclamation text-rose-500 text-xl mb-1"></i>
-                    <p class="text-xs text-rose-400 font-semibold">Error Loading Key (404 / Auth Issue)</p>
+                    <p class="text-xs text-rose-400 font-semibold">Error Loading Key</p>
                     <p class="text-xs text-gray-400 mt-1 max-w-md text-center px-4 leading-relaxed">${error.message}</p>
-                    <button onclick="openSettingsModal()" class="mt-3 px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold rounded-lg shadow cursor-pointer transition-all">
-                        <i class="fa-solid fa-gear mr-1"></i> Open Config Settings
+                    <button onclick="openSettingsModal()" class="mt-3 px-4 py-2 bg-cyan-500 hover:bg-cyan-400 text-black text-xs font-semibold rounded-lg shadow cursor-pointer transition-all">
+                        <i class="fa-solid fa-sliders mr-1"></i> Open Config Settings
                     </button>
                 `;
             } finally {
@@ -354,7 +363,7 @@
             localStorage.setItem('gh_branch', BRANCH);
             localStorage.setItem('gh_token', GITHUB_TOKEN);
 
-            document.getElementById('headerSubtitle').textContent = `${REPO_OWNER} / ${REPO_NAME}`;
+            document.getElementById('headerSubtitle').innerHTML = `Developed by <span class="text-emerald-400 font-semibold">ANXHU</span> &bull; ${REPO_OWNER} / ${REPO_NAME}`;
             document.getElementById('branchName').textContent = BRANCH;
 
             closeSettingsModal();
@@ -366,7 +375,7 @@
         async function updateKey() {
             const newKey = document.getElementById('newKeyInput').value;
             if (!newKey.trim()) {
-                showNotification('Error', 'Key content cannot be empty.', 'error');
+                showNotification('Error', 'Key payload cannot be empty.', 'error');
                 return;
             }
 
@@ -375,7 +384,7 @@
             const updateSpinner = document.getElementById('updateSpinner');
 
             updateButton.disabled = true;
-            updateButtonText.textContent = 'Updating...';
+            updateButtonText.textContent = 'Committing...';
             updateSpinner.classList.remove('hidden');
 
             try {
@@ -388,7 +397,7 @@
 
                 const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`;
                 const payload = {
-                    message: "Update key via web manager interface",
+                    message: "Update key via CYBER-ENGINE web manager by ANXHU",
                     content: base64Content,
                     sha: currentFileSha,
                     branch: BRANCH
@@ -417,14 +426,14 @@
                 document.getElementById('fileShaDisplay').textContent = `SHA: ${currentFileSha.substring(0, 10)}...`;
 
                 closeModal();
-                showNotification('Success!', 'Key has been successfully updated on GitHub.', 'success');
+                showNotification('Success!', 'Key successfully rewritten on GitHub repository.', 'success');
 
             } catch (error) {
                 console.error(error);
-                showNotification('Update Failed', error.message, 'error');
+                showNotification('Commit Failed', error.message, 'error');
             } finally {
                 updateButton.disabled = false;
-                updateButtonText.textContent = 'Update Key';
+                updateButtonText.textContent = 'Commit Update';
                 updateSpinner.classList.add('hidden');
             }
         }
