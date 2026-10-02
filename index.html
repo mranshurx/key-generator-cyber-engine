@@ -42,8 +42,12 @@
     <header class="border-b border-cyberBorder bg-cyberCard/80 backdrop-blur-md sticky top-0 z-10">
         <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
             <div class="flex items-center space-x-3">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-600 to-emerald-500 flex items-center justify-center shadow-lg shadow-cyan-500/20">
-                    <i class="fa-solid fa-terminal text-black font-bold text-base"></i>
+                <!-- Logo container with fallback to terminal icon if icon.png fails or is loading -->
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-600 to-emerald-500 flex items-center justify-center shadow-lg shadow-cyan-500/20 overflow-hidden relative border border-cyan-400/40">
+                    <img src="icon.png" alt="Logo" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                    <div class="absolute inset-0 items-center justify-center bg-cyberCard text-cyan-400 font-bold" style="display: none;">
+                        <i class="fa-solid fa-terminal text-sm"></i>
+                    </div>
                 </div>
                 <div>
                     <h1 class="text-sm font-extrabold tracking-wider text-cyan-400 uppercase">CYBER-ENGINE Key Generator</h1>
